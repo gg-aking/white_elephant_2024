@@ -55,7 +55,7 @@ questions = dict((i, qa) for i, qa in enumerate([
 				match_all = True),
 			QA(4,
 				"According to the eldest son of Denethor, the Steward of Gondor, what may one not do to enter the volcanic land of the east?",
-				["walk|stroll"])
+				["walk|stroll"]),
 			QA(5,
 				"What are the three kinds of cheese used in the making of the world's best boreg?",
 				["mozz?arella", "feta", "farmer|californi|fresh"],
