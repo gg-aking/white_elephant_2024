@@ -78,7 +78,8 @@ if 'q_idx' not in st.session_state:
 	st.session_state['q_idx'] = 0
 
 st.header('White Elephant 2024 Quiz')
-st.markdown("""8 out of 10 required to gain the password to unlock this year's most interesting present.
+st.markdown("""Congratulations on your selection! To unlock the treasures within, you must answer the following questions correctly.
+	8 out of 10 required to gain the password to unlock this year's most interesting present.
 	""")
 guesses = {}
 for q_idx, qa in sorted(questions.items(), key = lambda x : x[0]):
@@ -92,4 +93,5 @@ if st.button('Submit'):
 		if qa.matches_answer(guess):
 			nb_right += 1
 	st.write(f'Number correct: {nb_right}')
-
+	if nb_right >= 8:
+		st.write("I'm very proud of you. The code is the final riddle: the date of Christmas, MMDD")
